@@ -16,9 +16,9 @@ export const PERSONAL_INFO = {
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/tamimhasan13",
-  linkedin: "https://linkedin.com/in/rahuldev",
-  twitter: "https://twitter.com/rahuldev",
-  dribbble: "https://dribbble.com/rahuldev",
+  linkedin: "https://github.com/tamimhasan13",
+  twitter: "https://github.com/tamimhasan13",
+  dribbble: "https://github.com/tamimhasan13",
 };
 
 export const STATS = [
