@@ -48,7 +48,7 @@ const Services = () => {
               <FadeIn key={service.id} delay={100 + index * 100}>
                 <div className="group relative bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-primary/30  transition-all duration-300 h-full min-h-50 flex flex-col">
                   <div className="mb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-primary-20 border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="w-8 h-8 text-primary" />
                     </div>
                   </div>

@@ -4,41 +4,41 @@ export const services = [
     icon: "Layout",
     title: "Frontend Development",
     description:
-      "Building responsive and high-performance web applications using React, Next.js, and modern JavaScript frameworks with pixel-perfect design",
+      "Building modern and responsive web interfaces using React, Next.js, JavaScript, and Tailwind CSS.",
   },
   {
     id: 2,
     icon: "Smartphone",
     title: "Responsive Design",
     description:
-      "Creating mobile-first, responsive interfaces that work seamlessly across all devices and screen sizes with exceptional user experience.",
+      "Creating mobile-friendly interfaces that provide a consistent experience across different devices and screen sizes.",
   },
   {
     id: 3,
     icon: "Palette",
-    title: "UI/UX Design",
+    title: "UI/UX Implementation",
     description:
-      "Designing intuitive and visually appealing user interfaces with a strong focus on usability and user experience.",
+      "Turning designs into clean, user-friendly interfaces with a focus on usability, consistency, and visual quality.",
   },
   {
     id: 4,
     icon: "Code2",
-    title: "Custom Components",
+    title: "Reusable Components",
     description:
-      "Developing reusable, scalable component libraries and design systems for consistent UI development.",
+      "Creating reusable and maintainable React components to keep applications consistent and easy to manage.",
   },
   {
     id: 5,
     icon: "Zap",
     title: "Performance Optimization",
     description:
-      "Optimizing web applications for speed and efficiency through code splitting, lazy loading, and best practices.",
+      "Improving website performance through optimized code, lazy loading, efficient rendering, and modern best practices.",
   },
   {
     id: 6,
     icon: "Globe",
-    title: "Full Stack Development",
+    title: "Full-Stack Development",
     description:
-      "Building complete web solutions with frontend, backend, and database integration using modern technologies.",
+      "Building full-stack web applications using React, Node.js, Express, MongoDB, and REST APIs.",
   },
 ];

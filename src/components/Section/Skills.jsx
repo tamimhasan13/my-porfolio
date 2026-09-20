@@ -15,7 +15,7 @@ const Skills = () => {
       skills.find((s) => s.name === "Redux"),
     ].filter(Boolean),
 
-    "Backend & APIs": [
+    "Backend & Database": [
       skills.find((s) => s.name === "Node.js"),
       skills.find((s) => s.name === "REST APIs"),
       skills.find((s) => s.name === "MongoDB"),
@@ -29,24 +29,27 @@ const Skills = () => {
     ].filter(Boolean),
   };
   // Get proficiency percentage
-  const getProficiencyLevel = (level) => {
-    const levels = {
-      Expert: 95,
-      Advanced: 80,
-      Intermediate: 65,
-    };
-    return levels[level] || 50;
-  };
+ const getProficiencyLevel = (level) => {
+   const levels = {
+     Advanced: 80,
+     Intermediate: 65,
+     Beginner: 45,
+   };
+
+   return levels[level] || 50;
+ };
 
   // Get level color
   const getLevelColor = (level) => {
     const colors = {
-      Expert: "text-[#8DFF69] bg-[#8DFF69]/20 border-[#8DFF69]/30",
       Advanced: "text-cyan-400 bg-cyan-500/20 border-cyan-500/30",
       Intermediate: "text-emerald-400 bg-emerald-500/20 border-emerald-500/30",
+      Beginner: "text-yellow-400 bg-yellow-500/20 border-yellow-500/30",
     };
+
     return colors[level] || "text-gray-400 bg-gray-500/20 border-gray-500/30";
   };
+
   return (
     <section id="skills" className="relative py-20 bg-black overflow-hidden">
       {/* Animated Background Gradients */}
@@ -68,7 +71,8 @@ const Skills = () => {
               Skills & Technologies
             </h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto">
-              A comprehensive overview of my technical skills a
+              A comprehensive overview of my technical skills and the
+              technologies I use to build modern web applications.
             </p>
           </div>
         </FadeIn>

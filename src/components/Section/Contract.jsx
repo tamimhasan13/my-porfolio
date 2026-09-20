@@ -7,6 +7,8 @@ import {
 } from "react-icons/fa";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants";
 import FadeIn from "../animations/FadeIn";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,28 +26,59 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+   e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
-      setStatus({ type: "error", message: "Please fill in all fields" });
-      return;
-    }
+   if (!formData.name || !formData.email || !formData.message) {
+     setStatus({ type: "error", message: "Please fill in all fields" });
+     return;
+   }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setStatus({ type: "error", message: "Please enter a valid email" });
-      return;
-    }
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    setStatus({
-      type: "success",
-      message: "Message sent successfully! I'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
+   if (!emailRegex.test(formData.email)) {
+     setStatus({ type: "error", message: "Please enter a valid email" });
+     return;
+   }
 
-    setTimeout(() => setStatus({ type: "", message: "" }), 5000);
-  };
+   try {
+     await emailjs.send(
+       import.meta.env.VITE_EMAILJS_SERVICE_ID,
+       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+       {
+         from_name: formData.name,
+         from_email: formData.email,
+         message: formData.message,
+       },
+       {
+         publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+       },
+     );
+
+     setStatus({
+       type: "success",
+       message: "Message sent successfully! I'll get back to you soon.",
+     });
+
+     setFormData({
+       name: "",
+       email: "",
+       message: "",
+     });
+
+     setTimeout(() => {
+       setStatus({ type: "", message: "" });
+     }, 5000);
+   } catch (error) {
+     console.error("EmailJS Error:", error);
+
+     setStatus({
+       type: "error",
+       message: "Failed to send message. Please try again.",
+     });
+   }
+ };
+
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,
@@ -121,7 +154,7 @@ const Contact = () => {
                 </div>
                 <div className="">
                   <label
-                    htmlFor="email"
+                    htmlFor="message"
                     className="block text-sm font-medium text-white/80 mb-2"
                   >
                     Message
@@ -161,8 +194,8 @@ const Contact = () => {
                   Let's Connect
                 </h3>
                 <p className="text-white/60 leading-relaxed">
-                  I'm always open to discussing new project,creative ideas, or
-                  opportunities to be part of your vision Feel free to reach
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your vision. Feel free to reach
                   out!
                 </p>
               </div>
@@ -216,7 +249,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="">
-                <p className="text-sm text-white/60 mb-4">Contract With Me</p>
+                <p className="text-sm text-white/60 mb-4">Contact With Me</p>
                 <div className="flex gap-4">
                   {Object.entries(SOCIAL_LINKS)
                     .slice(0, 3)

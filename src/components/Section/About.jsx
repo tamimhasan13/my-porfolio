@@ -104,7 +104,8 @@ const About = () => {
                         Expertise
                       </h3>
                       <p className="text-sm text-white/70 leading-relaxed">
-                        Specialized in building scalable web applications with modern technologies and best practices.
+                        Specialized in building scalable web applications with
+                        modern technologies and best practices.
                       </p>
                     </div>
                   </div>
@@ -121,7 +122,7 @@ const About = () => {
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed">
                     {" "}
-                    writing maintainable,well-documented code that scales
+                    writing maintainable ,well-documented code that scales
                   </p>
                 </div>
               </div>
@@ -135,7 +136,7 @@ const About = () => {
                     Performance
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed">
-                    Optimizing spreed and efficiency in every project
+                    Optimizing speed and efficiency in every project
                   </p>
                 </div>
               </div>
@@ -145,25 +146,25 @@ const About = () => {
                   <div className="grid grid-cols-3 gap-6 text-center">
                     <div className="">
                       <div className="text-2xl mb-1 text-primary font-bold">
-                        100%
+                        6+
                       </div>
                       <div className="text-sm text-white/70">
-                        client satisfaction
+                        Projects Built
                       </div>
                     </div>
                     <div className="">
                       <div className="text-2xl mb-1 text-primary font-bold">
-                        24/7
+                        11+
                       </div>
-                      <div className="text-sm text-white/70">
-                        Support Available
-                      </div>
+                      <div className="text-sm text-white/70">Technologies</div>
                     </div>
                     <div className="">
                       <div className="text-2xl mb-1 text-primary font-bold">
-                        First
+                        26
                       </div>
-                      <div className="text-sm text-white/70">Delivery</div>
+                      <div className="text-sm text-white/70">
+                        GitHub Repositories
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -175,15 +176,24 @@ const About = () => {
         <FadeIn delay={500}>
           <div className="flex flex-col items-center gap-8">
             <div className="text-center">
-              <h3 className="text-2xl font-normal text-white mb-2">Tech Stack & Expertise</h3>
-              <p className="text-sm text-white/60">Technologies I work with to build amazing pro</p>
+              <h3 className="text-2xl font-normal text-white mb-2">
+                Tech Stack & Expertise
+              </h3>
+              <p className="text-sm text-white/60">
+                Technologies I work with to build amazing pro
+              </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-4xl">
               {skills.map((skill, index) => (
-                <div key={index} className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105">
+                <div
+                  key={index}
+                  className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105"
+                >
                   <skill.icon className="text-3xl text-primary "></skill.icon>
-                  <div className="text-sm font-medium text-white/80 text-center">{skill.name}</div>
+                  <div className="text-sm font-medium text-white/80 text-center">
+                    {skill.name}
+                  </div>
                   <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300"></div>
                 </div>
               ))}

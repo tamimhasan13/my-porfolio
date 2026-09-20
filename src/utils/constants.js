@@ -16,22 +16,28 @@ export const PERSONAL_INFO = {
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/tamimhasan13",
-  linkedin: "https://github.com/tamimhasan13",
+  linkedin: "https://www.linkedin.com/in/md-tamim-hasan-4515b9425/",
   twitter: "https://github.com/tamimhasan13",
   dribbble: "https://github.com/tamimhasan13",
 };
 
 export const STATS = [
-  { label: "Years Experience", value: "4+" },
-  { label: "Projects Completed", value: "60+" },
-  { label: "Technologies", value: "18+" },
-  { label: "Client Satisfaction", value: "97%" },
+  { label: "Years Experience", value: "Fresher" },
+  { label: "Projects Completed", value: "6+" },
+  { label: "Technologies", value: "11+" },
+  { label: "GitHub Repositories", value: "25+" },
+  // { label: "Client Satisfaction", value: "90%" },
 ];
 
+// export const ABOUT_STATS = [
+//   { label: "Happy Clients", value: "50+" },
+//   { label: "Code Commits", value: "3K+" },
+//   { label: "GitHub Stars", value: "800+" },
+// ];
 export const ABOUT_STATS = [
-  { label: "Happy Clients", value: "50+" },
-  { label: "Code Commits", value: "3K+" },
-  { label: "GitHub Stars", value: "800+" },
+  { label: "Projects Built", value: "6+" },
+  { label: "Technologies Learned", value: "11+" },
+  { label: "Learning Hours", value: "500+" },
 ];
 
 export const NAV_LINKS = [
