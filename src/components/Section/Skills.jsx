@@ -1,6 +1,6 @@
 import * as Icons from "lucide-react";
 import { skills } from "../../data/skills";
-import FadeIn from "../Animations/FadeIn";
+import FadeIn from "../animations/FadeIn";
 
 const Skills = () => {
   // Categorize skills

@@ -14,7 +14,7 @@ import {
 
 import { PERSONAL_INFO, SOCIAL_LINKS, NAV_LINKS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
-import FadeIn from "../Animations/FadeIn";
+import FadeIn from "../animations/FadeIn";
 
 const Footer = () => {
   

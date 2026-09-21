@@ -1,7 +1,7 @@
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 import { useRef, useState } from "react";
 import { testimonials } from "../../data/testimonials";
-import FadeIn from "../Animations/FadeIn";
+import FadeIn from "../animations/FadeIn";
 // import { testimonials } from '../../../data/testimonials';
 
 const Testimonials = () => {
