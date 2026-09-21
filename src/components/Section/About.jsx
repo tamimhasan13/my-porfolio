@@ -10,7 +10,7 @@ import {
 } from "react-icons/si";
 
 import { PERSONAL_INFO, ABOUT_STATS } from "../../utils/constants";
-import FadeIn from "../animations/FadeIn";
+import FadeIn from "../Animations/FadeIn";
 import RadialGradientBackground from "../Backgrounds/RadialGradientBackground";
 
 

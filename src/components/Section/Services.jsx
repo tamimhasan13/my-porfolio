@@ -1,7 +1,7 @@
 import * as Icons from "lucide-react";
 import { Wrench } from "lucide-react";
 import { services } from "../../data/services";
-import FadeIn from "../animations/FadeIn";
+import FadeIn from "../Animations/FadeIn";
 
 const Services = () => {
   return (

@@ -10,7 +10,7 @@ import {
 import Typewriter from "typewriter-effect";
 import { PERSONAL_INFO, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
-import FadeIn from "../animations/FadeIn";
+import FadeIn from "../Animations/FadeIn";
 import RadialGradientBackground from "../Backgrounds/RadialGradientBackground";
 
 

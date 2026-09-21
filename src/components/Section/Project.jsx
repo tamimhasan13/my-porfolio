@@ -1,6 +1,6 @@
 import { Briefcase, ChevronLeft, ChevronRight, Globe, Palette, Target, Zap } from "lucide-react";
 import React, { useRef, useState } from "react";
-import FadeIn from "../animations/FadeIn";
+import FadeIn from "../Animations/FadeIn";
 import { categories, projects } from "../../data/projects";
 import ProjectCard from "../ui/ProjectCard";
 

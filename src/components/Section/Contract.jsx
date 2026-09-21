@@ -6,7 +6,7 @@ import {
   FaTwitter as Twitter,
 } from "react-icons/fa";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants";
-import FadeIn from "../animations/FadeIn";
+import FadeIn from "../Animations/FadeIn";
 import emailjs from "@emailjs/browser";
 
 
