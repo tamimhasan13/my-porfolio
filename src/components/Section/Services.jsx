@@ -43,7 +43,7 @@ const Services = () => {
         </FadeIn>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {services.slice(0, 2).map((service, index) => {
-            const IconComponent = Icons[service.icon] || Icons.Co;
+            const IconComponent = Icons[service.icon] || Icons.Code2;
             return (
               <FadeIn key={service.id} delay={100 + index * 100}>
                 <div className="group relative bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-primary/30  transition-all duration-300 h-full min-h-50 flex flex-col">
