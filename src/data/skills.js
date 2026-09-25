@@ -17,7 +17,7 @@ export const skills = [
     id: 3,
     name: "TypeScript",
     icon: "FileType",
-    level: "Advanced",
+    level: "Intermediate",
     experience: "Hands-on Projects ",
   },
   {
